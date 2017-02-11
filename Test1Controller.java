@@ -22,11 +22,11 @@ public class Test1Controller extends BaseController implements Initializable {
 	private static BorderPane bpane; 
 	 
 	public Stage getInstance() {
-		return instance;
+	    return instance;
 	}
 	
 	public void setInstance(Stage linstance) {
-		instance = linstance;
+	    instance = linstance;
 	}
 	
 	private void SetPane(BorderPane bp){
@@ -67,20 +67,20 @@ public class Test1Controller extends BaseController implements Initializable {
 	}
 	
 	@Override
-    public void initialize(URL url, ResourceBundle bundle) {
-        //初期化処理
-    }
+        public void initialize(URL url, ResourceBundle bundle) {
+            //初期化処理
+        }
 	
 	protected void show(){
 		instance.show();
 	}
 	
-    public void onClick(ActionEvent event){
-        JavaFXtest.getInstance().SetPage(this.getInstance());
-    }
+        public void onClick(ActionEvent event){
+            JavaFXtest.getInstance().SetPage(this.getInstance());
+        }
 	
 	@FXML
-    public void onBackButtonClicked(ActionEvent event){
-        JavaFXtest.getInstance().SetPage(this.getInstance());
-    }
+        public void onBackButtonClicked(ActionEvent event){
+            JavaFXtest.getInstance().SetPage(this.getInstance());
+        }
 }
