@@ -18,7 +18,7 @@ public class JavaFXtest extends Application {
 		final java.util.logging.Logger logger = java.util.logging.Logger.getLogger("SampleLoging");
 		try{
 
-			primaryStage.setTitle(display.getTitleName(display.DispTitleId.JH01G010));
+			primaryStage.setTitle(display.getTitleName(display.DispTitleId.disp001));
 			setExit(primaryStage);
 			//画面表示設定
 			BorderPane testdisp;
