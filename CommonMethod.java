@@ -7,12 +7,11 @@ import java.util.Locale;
 
 public class CommonMethod {
 	//現在時刻を取得する関数
-	public static String getDate()
-	{
+	public static String getDate(){
 		String dateStr = "";
 		Calendar calendar = Calendar.getInstance(Locale.JAPAN);
-        DateFormat dateformat = new SimpleDateFormat("yyyy/MM/dd hh:mm:ss");
-        dateStr = dateformat.format(calendar.getTime());
-        return dateStr;
+                DateFormat dateformat = new SimpleDateFormat("yyyy/MM/dd hh:mm:ss");
+                dateStr = dateformat.format(calendar.getTime());
+                return dateStr;
 	}
 }
