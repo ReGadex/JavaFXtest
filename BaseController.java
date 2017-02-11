@@ -11,7 +11,7 @@ public abstract class BaseController{
 	
 	//表示画面サイズ
 	private final double width  = 1920;
-    private final double height = 1050; 
+        private final double height = 1050; 
 	
 	//　コントローラーのinstanceは継承先で定義(getter,setterも同様)
 	
@@ -82,14 +82,13 @@ public abstract class BaseController{
 	}
 	
 	//windowで×ボタンが押された場合に強制終了する。⇒確認ダイアログを出してから終了する様に改良とかできると思う
-	public void setExit(Stage stage)
-	{
-		stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
-            @Override
-            public void handle(WindowEvent t) {
-            	System.out.println("終了ボタンが押された為、終了します。");
-            	System.exit(1);
-            }
-        });
+	public void setExit(Stage stage){
+	    stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+                @Override
+                public void handle(WindowEvent t) {
+            	    System.out.println("終了ボタンが押された為、終了します。");
+            	    System.exit(1);
+                }
+            });
 	}
 }
